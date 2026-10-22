@@ -1,0 +1,1445 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>LM DESIGN & AMÉNAGEMENT | Mobilier sur mesure</title>
+
+<meta name="description" content="LM DESIGN & AMÉNAGEMENT : meubles sur mesure, décoration et aménagement intérieur à Kinshasa.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+:root {
+
+    --noir: #171512;
+
+    --or: #c5a36a;
+
+    --beige: #f8f4ec;
+
+    --texte: #716a60;
+
+    --blanc: #ffffff;
+
+}
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+html {
+
+    scroll-behavior: smooth;
+
+    scroll-padding-top: 90px;
+
+}
+
+body {
+
+    font-family: "DM Sans", sans-serif;
+
+    background: var(--beige);
+
+    color: var(--noir);
+
+    line-height: 1.7;
+
+}
+
+a {
+
+    color: inherit;
+
+    text-decoration: none;
+
+}
+
+button {
+
+    font: inherit;
+
+}
+
+img {
+
+    display: block;
+
+    width: 100%;
+
+    object-fit: cover;
+
+}
+
+.eyebrow {
+
+    color: #a17d43;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 18px;
+
+}
+
+h1, h2, h3 {
+
+    font-family: "Playfair Display", serif;
+
+    font-weight: 400;
+
+    line-height: 1.2;
+
+}
+
+/* NAVIGATION */
+
+header {
+
+    min-height: 86px;
+
+    padding: 15px 7%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+    background: var(--beige);
+
+    border-bottom: 1px solid #e7dfd1;
+
+}
+
+.logo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+}
+
+.logo-mark {
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 39px;
+
+    color: var(--or);
+
+    padding-right: 12px;
+
+    border-right: 1px solid var(--or);
+
+    line-height: 1;
+
+}
+
+.logo-name {
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+}
+
+.logo-name small {
+
+    display: block;
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+}
+
+nav {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 26px;
+
+}
+
+nav a {
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+
+}
+
+nav a:hover {
+
+    color: #a17d43;
+
+}
+
+nav .contact-link {
+
+    background: var(--noir);
+
+    color: white;
+
+    padding: 12px 20px;
+
+}
+
+nav .contact-link:hover {
+
+    background: var(--or);
+
+    color: var(--noir);
+
+}
+
+.menu-toggle {
+
+    display: none;
+
+    border: none;
+
+    background: transparent;
+
+    color: var(--noir);
+
+    font-size: 28px;
+
+    cursor: pointer;
+
+}
+
+/* ACCUEIL */
+
+.hero {
+
+    min-height: 660px;
+
+    height: 78vh;
+
+    max-height: 850px;
+
+    display: flex;
+
+    align-items: center;
+
+    position: relative;
+
+    color: white;
+
+    background:
+
+        linear-gradient(90deg,
+
+        rgba(19,16,13,.86),
+
+        rgba(19,16,13,.48) 55%,
+
+        rgba(19,16,13,.10)),
+
+        url("https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=2000&q=85")
+
+        center 55% / cover;
+
+}
+
+.hero-content {
+
+    position: relative;
+
+    max-width: 780px;
+
+    padding: 65px 7%;
+
+}
+
+.hero .eyebrow {
+
+    color: #e0c18c;
+
+}
+
+.hero h1 {
+
+    font-size: clamp(42px, 6vw, 78px);
+
+    margin-bottom: 24px;
+
+}
+
+.hero-description {
+
+    max-width: 490px;
+
+    font-size: 15px;
+
+    color: #eee9e0;
+
+    margin-bottom: 30px;
+
+}
+
+.buttons {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 14px;
+
+}
+
+.btn {
+
+    min-height: 48px;
+
+    padding: 13px 23px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    transition: .3s;
+
+}
+
+.btn-gold {
+
+    background: var(--or);
+
+    color: var(--noir);
+
+    border: 1px solid var(--or);
+
+}
+
+.btn-gold:hover {
+
+    background: #dec59c;
+
+    transform: translateY(-2px);
+
+}
+
+.btn-outline {
+
+    color: white;
+
+    border: 1px solid white;
+
+}
+
+.btn-outline:hover {
+
+    background: white;
+
+    color: var(--noir);
+
+}
+
+.hero-note {
+
+    position: absolute;
+
+    right: 7%;
+
+    bottom: 24px;
+
+    color: #f0dfc1;
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+}
+
+/* BANDEAU */
+
+.strip {
+
+    background: var(--noir);
+
+    color: white;
+
+    padding: 23px 7%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+}
+
+.strip strong {
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 20px;
+
+    font-weight: 400;
+
+}
+
+.strip span {
+
+    color: #d7c5a6;
+
+    font-size: 11px;
+
+}
+
+/* SECTIONS */
+
+section.content-section {
+
+    padding: 95px 7%;
+
+}
+
+.section-heading {
+
+    text-align: center;
+
+    max-width: 660px;
+
+    margin: 0 auto 48px;
+
+}
+
+.section-heading h2,
+
+.about-text h2,
+
+.contact h2 {
+
+    font-size: clamp(33px, 4vw, 50px);
+
+    margin-bottom: 20px;
+
+}
+
+.section-heading > p:last-child,
+
+.about-text > p:not(.eyebrow),
+
+.contact > p:not(.eyebrow) {
+
+    color: var(--texte);
+
+    font-size: 14px;
+
+}
+
+/* À PROPOS */
+
+.about {
+
+    display: grid;
+
+    grid-template-columns: 1fr .9fr;
+
+    align-items: center;
+
+    gap: 65px;
+
+}
+
+.about-photo {
+
+    height: 490px;
+
+    overflow: hidden;
+
+}
+
+.about-photo img {
+
+    height: 100%;
+
+    transition: transform .6s;
+
+}
+
+.about-photo:hover img {
+
+    transform: scale(1.04);
+
+}
+
+.about-text h2 {
+
+    margin-bottom: 25px;
+
+}
+
+.about-text > p:not(.eyebrow) {
+
+    margin-bottom: 17px;
+
+}
+
+.text-link {
+
+    display: inline-block;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    border-bottom: 1px solid var(--or);
+
+    padding-bottom: 5px;
+
+    margin-top: 10px;
+
+}
+
+/* COLLECTIONS */
+
+.collections {
+
+    background: #efe8dc;
+
+}
+
+.products {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 32px 26px;
+
+}
+
+.product-card {
+
+    background: var(--beige);
+
+    overflow: hidden;
+
+}
+
+.product-card img {
+
+    height: 340px;
+
+    transition: transform .6s;
+
+}
+
+.product-card:hover img {
+
+    transform: scale(1.04);
+
+}
+
+.product-info {
+
+    padding: 25px;
+
+}
+
+.product-info > span {
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+    color: #9b7945;
+
+    font-weight: 700;
+
+}
+
+.product-info h3 {
+
+    font-size: 29px;
+
+    margin: 8px 0;
+
+}
+
+.product-info p {
+
+    color: var(--texte);
+
+    font-size: 13px;
+
+}
+
+/* SERVICES */
+
+.services {
+
+    background: var(--noir);
+
+    color: white;
+
+}
+
+.services .section-heading h2 {
+
+    margin-bottom: 0;
+
+}
+
+.service-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    gap: 32px;
+
+}
+
+.service-card {
+
+    border-top: 1px solid #796443;
+
+    padding: 28px 20px;
+
+}
+
+.service-number {
+
+    color: var(--or);
+
+    font-size: 12px;
+
+    letter-spacing: 2px;
+
+}
+
+.service-card h3 {
+
+    font-size: 26px;
+
+    margin: 18px 0 12px;
+
+}
+
+.service-card p {
+
+    font-size: 13px;
+
+    color: #c9c2b7;
+
+}
+
+/* CONTACT */
+
+.contact {
+
+    background: #e9e0d2;
+
+    text-align: center;
+
+}
+
+.contact h2 {
+
+    max-width: 720px;
+
+    margin: 0 auto 20px;
+
+}
+
+.contact > p:not(.eyebrow) {
+
+    max-width: 540px;
+
+    margin: 0 auto 28px;
+
+}
+
+/* PIED DE PAGE */
+
+footer {
+
+    background: #11100e;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 48px 7% 24px;
+
+}
+
+.footer-logo {
+
+    color: var(--or);
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 29px;
+
+    letter-spacing: 3px;
+
+}
+
+footer p {
+
+    color: #c9c2b7;
+
+    font-size: 12px;
+
+    margin-top: 10px;
+
+}
+
+.footer-links {
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 25px;
+
+    margin: 25px 0;
+
+}
+
+.footer-links a {
+
+    font-size: 12px;
+
+}
+
+.copyright {
+
+    border-top: 1px solid #39352e;
+
+    padding-top: 20px;
+
+    margin-top: 20px;
+
+    font-size: 10px;
+
+}
+
+/* TÉLÉPHONES ET TABLETTES */
+
+@media (max-width: 850px) {
+
+    header {
+
+        padding: 15px 5%;
+
+    }
+
+    nav {
+
+        gap: 13px;
+
+    }
+
+    nav a {
+
+        font-size: 10px;
+
+    }
+
+    section.content-section {
+
+        padding: 75px 5%;
+
+    }
+
+    .about {
+
+        gap: 30px;
+
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    header {
+
+        min-height: 75px;
+
+    }
+
+    .logo-mark {
+
+        font-size: 32px;
+
+    }
+
+    .logo-name {
+
+        font-size: 13px;
+
+    }
+
+    .menu-toggle {
+
+        display: block;
+
+    }
+
+    nav {
+
+        display: none;
+
+        position: absolute;
+
+        top: 100%;
+
+        left: 0;
+
+        right: 0;
+
+        background: var(--beige);
+
+        padding: 15px 6% 25px;
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 0;
+
+        box-shadow: 0 12px 18px rgba(0,0,0,.08);
+
+    }
+
+    nav.active {
+
+        display: flex;
+
+    }
+
+    nav a {
+
+        padding: 13px 5px;
+
+        font-size: 13px;
+
+    }
+
+    nav .contact-link {
+
+        text-align: center;
+
+        margin-top: 10px;
+
+    }
+
+    .hero {
+
+        min-height: 610px;
+
+        height: 78vh;
+
+        background-position: 58% center;
+
+    }
+
+    .hero-content {
+
+        padding: 40px 6%;
+
+    }
+
+    .hero h1 {
+
+        font-size: clamp(40px, 10vw, 56px);
+
+    }
+
+    .hero-description {
+
+        font-size: 13px;
+
+    }
+
+    .buttons {
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        max-width: 300px;
+
+    }
+
+    .hero-note {
+
+        right: 5%;
+
+        font-size: 8px;
+
+    }
+
+    .strip {
+
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 22px 5%;
+
+    }
+
+    section.content-section {
+
+        padding: 65px 6%;
+
+    }
+
+    .about {
+
+        grid-template-columns: 1fr;
+
+        gap: 28px;
+
+    }
+
+    .about-photo {
+
+        height: 320px;
+
+    }
+
+    .products {
+
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+
+    }
+
+    .product-card img {
+
+        height: 285px;
+
+    }
+
+    .service-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 10px;
+
+    }
+
+    .service-card {
+
+        padding: 25px 5px;
+
+    }
+
+    .contact h2 {
+
+        font-size: 35px;
+
+    }
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+
+        scroll-behavior: auto;
+
+    }
+
+    *, *::before, *::after {
+
+        transition: none !important;
+
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header id="accueil">
+
+    <a href="#accueil" class="logo">
+
+        <span class="logo-mark">LM</span>
+
+        <span class="logo-name">
+
+            DESIGN
+
+            <small>& AMÉNAGEMENT</small>
+
+        </span>
+
+    </a>
+
+    <button class="menu-toggle" id="menu-toggle"
+
+        aria-label="Ouvrir le menu"
+
+        aria-expanded="false">☰</button>
+
+    <nav id="navigation">
+
+        <a href="#accueil">Accueil</a>
+
+        <a href="#apropos">À propos</a>
+
+        <a href="#collections">Nos créations</a>
+
+        <a href="#services">Services</a>
+
+        <a href="#contact" class="contact-link">Contact</a>
+
+    </nav>
+
+</header>
+
+<main>
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <p class="eyebrow">L'ART DU MOBILIER SUR MESURE</p>
+
+            <h1>Des meubles qui donnent vie à vos espaces.</h1>
+
+            <p class="hero-description">
+
+                Nous imaginons des intérieurs élégants, chaleureux
+
+                et uniques, conçus selon vos envies.
+
+            </p>
+
+            <div class="buttons">
+
+                <a href="#collections" class="btn btn-gold">
+
+                    DÉCOUVRIR NOS CRÉATIONS
+
+                </a>
+
+                <a href="#contact" class="btn btn-outline">
+
+                    DEMANDER UN DEVIS
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="hero-note">DESIGN · QUALITÉ · SAVOIR-FAIRE</div>
+
+    </section>
+
+    <div class="strip">
+
+        <strong>Des espaces pensés pour vous.</strong>
+
+        <span>Élégance · Créativité · Personnalisation</span>
+
+    </div>
+
+    <section class="content-section about" id="apropos">
+
+        <div class="about-photo">
+
+            <img
+
+                src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1000&q=85"
+
+                alt="Salon contemporain aménagé avec élégance"
+
+                loading="lazy">
+
+        </div>
+
+        <div class="about-text">
+
+            <p class="eyebrow">NOTRE UNIVERS</p>
+
+            <h2>Votre vision, notre savoir-faire.</h2>
+
+            <p>
+
+                Chez LM DESIGN & AMÉNAGEMENT, chaque espace mérite
+
+                une attention particulière. Nous imaginons des meubles
+
+                et des aménagements qui associent beauté, confort
+
+                et fonctionnalité.
+
+            </p>
+
+            <p>
+
+                Des matériaux aux finitions, chaque détail compte
+
+                pour créer un intérieur adapté à votre style.
+
+            </p>
+
+            <a href="#services" class="text-link">
+
+                DÉCOUVRIR NOTRE SAVOIR-FAIRE →
+
+            </a>
+
+        </div>
+
+    </section>
+
+    <section class="content-section collections" id="collections">
+
+        <div class="section-heading">
+
+            <p class="eyebrow">NOS CRÉATIONS</p>
+
+            <h2>Un intérieur à votre image</h2>
+
+            <p>
+
+                Découvrez nos univers et imaginons ensemble
+
+                votre prochain projet.
+
+            </p>
+
+        </div>
+
+        <div class="products">
+
+            <article class="product-card">
+
+                <img
+
+                    src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=900&q=85"
+
+                    alt="Canapé dans un salon élégant"
+
+                    loading="lazy">
+
+                <div class="product-info">
+
+                    <span>01 / CONFORT</span>
+
+                    <h3>Salon</h3>
+
+                    <p>Des espaces accueillants et raffinés.</p>
+
+                    <a href="#contact" class="text-link">CRÉER MON SALON →</a>
+
+                </div>
+
+            </article>
+
+            <article class="product-card">
+
+                <img
+
+                    src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=900&q=85"
+
+                    alt="Décoration intérieure contemporaine"
+
+                    loading="lazy">
+
+                <div class="product-info">
+
+                    <span>02 / SÉRÉNITÉ</span>
+
+                    <h3>Chambre</h3>
+
+                    <p>Un cocon pensé pour votre bien-être.</p>
+
+                    <a href="#contact" class="text-link">CRÉER MA CHAMBRE →</a>
+
+                </div>
+
+            </article>
+
+            <article class="product-card">
+
+                <img
+
+                    src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=85"
+
+                    alt="Maison moderne et aménagement intérieur"
+
+                    loading="lazy">
+
+                <div class="product-info">
+
+                    <span>03 / HARMONIE</span>
+
+                    <h3>Cuisine & intérieur</h3>
+
+                    <p>Des aménagements beaux et pratiques.</p>
+
+                    <a href="#contact" class="text-link">IMAGINER MON PROJET →</a>
+
+                </div>
+
+            </article>
+
+            <article class="product-card">
+
+                <img
+
+                    src="https://images.unsplash.com/photo-1499933374294-4584851497cc?auto=format&fit=crop&w=900&q=85"
+
+                    alt="Mobilier et espace de travail"
+
+                    loading="lazy">
+
+                <div class="product-info">
+
+                    <span>04 / CRÉATION</span>
+
+                    <h3>Mobilier sur mesure</h3>
+
+                    <p>Des meubles adaptés à vos besoins.</p>
+
+                    <a href="#contact" class="text-link">COMMANDER UN MEUBLE →</a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+    <section class="content-section services" id="services">
+
+        <div class="section-heading">
+
+            <p class="eyebrow">CE QUE NOUS FAISONS</p>
+
+            <h2>Nos services</h2>
+
+        </div>
+
+        <div class="service-grid">
+
+            <article class="service-card">
+
+                <span class="service-number">01</span>
+
+                <h3>Conception</h3>
+
+                <p>
+
+                    Nous étudions vos idées pour concevoir
+
+                    des espaces qui vous ressemblent.
+
+                </p>
+
+            </article>
+
+            <article class="service-card">
+
+                <span class="service-number">02</span>
+
+                <h3>Fabrication</h3>
+
+                <p>
+
+                    Des meubles pensés pour votre espace,
+
+                    vos goûts et vos besoins.
+
+                </p>
+
+            </article>
+
+            <article class="service-card">
+
+                <span class="service-number">03</span>
+
+                <h3>Aménagement</h3>
+
+                <p>
+
+                    Nous vous accompagnons dans la mise
+
+                    en valeur de votre intérieur.
+
+                </p>
+
+            </article>
+
+        </div>
+
+    </section>
+
+    <section class="content-section contact" id="contact">
+
+        <p class="eyebrow">PARLONS DE VOTRE PROJET</p>
+
+        <h2>Créons ensemble un espace exceptionnel.</h2>
+
+        <p>
+
+            Vous avez une idée de meuble ou un projet d'aménagement ?
+
+            Écrivez-nous pour en discuter et demander un devis.
+
+        </p>
+
+        <a
+
+            href="https://wa.me/243836010154?text=Bonjour%20LM%20DESIGN%2C%20je%20souhaite%20un%20devis."
+
+            class="btn btn-gold"
+
+            target="_blank"
+
+            rel="noopener noreferrer">
+
+            COMMANDER SUR WHATSAPP
+
+        </a>
+
+    </section>
+
+</main>
+
+<footer>
+
+    <a href="#accueil" class="footer-logo">LM DESIGN</a>
+
+    <p>Des meubles qui donnent vie à vos espaces.</p>
+
+    <div class="footer-links">
+
+        <a href="#apropos">À propos</a>
+
+        <a href="#collections">Nos créations</a>
+
+        <a href="#services">Services</a>
+
+        <a href="#contact">Contact</a>
+
+    </div>
+
+    <p class="copyright">
+
+        © <span id="year"></span> LM DESIGN & AMÉNAGEMENT.
+
+        Tous droits réservés.
+
+    </p>
+
+</footer>
+
+<script>
+
+const menuToggle = document.getElementById("menu-toggle");
+
+const navigation = document.getElementById("navigation");
+
+menuToggle.addEventListener("click", function () {
+
+    const ouvert = navigation.classList.toggle("active");
+
+    menuToggle.textContent = ouvert ? "✕" : "☰";
+
+    menuToggle.setAttribute("aria-expanded", ouvert);
+
+    menuToggle.setAttribute(
+
+        "aria-label",
+
+        ouvert ? "Fermer le menu" : "Ouvrir le menu"
+
+    );
+
+});
+
+navigation.querySelectorAll("a").forEach(function (lien) {
+
+    lien.addEventListener("click", function () {
+
+        navigation.classList.remove("active");
+
+        menuToggle.textContent = "☰";
+
+        menuToggle.setAttribute("aria-expanded", "false");
+
+        menuToggle.setAttribute("aria-label", "Ouvrir le menu");
+
+    });
+
+});
+
+document.getElementById("year").textContent =
+
+    new Date().getFullYear();
+
+</script>
+
+</body>
+
+</html>
